@@ -65,8 +65,8 @@ app.post("/cadastroitensfit", async (req, res) => {
   }
 });
 
-app.get("/", async (req, res) => {
-  res.json({ message: "API em execução" });
+app.get("/", async(req,res)=>{
+  res.sendFile(_dirname +"/index.html");
 });
 
 app.listen(port, () => {
